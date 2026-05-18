@@ -58,6 +58,7 @@ backdrop-filter: blur(3px);
 }
 
 .cards > a {
+
     width: 100%;
     max-width: 450px;
     box-sizing: border-box;
