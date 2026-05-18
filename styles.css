@@ -6,7 +6,8 @@ body{
     justify-content: center;
     align-items: center;
     display:flex;
-    min-height: 20vh;
+    min-height: 100vh;
+    padding: 20px;
     flex-direction: column;
     font-family: Inter, sans-serif;
     color:white;
@@ -26,7 +27,8 @@ gap: 20px;
 
 .card {
 height: 200px;
-width: 400px;
+width: 100%;
+box-sizing: border-box;
 padding: 20px 30px;
 border-radius: 20px;
 background-color: rgba(128, 128, 128, 0.05);
@@ -56,6 +58,13 @@ a {
     display: inline-block;
     text-decoration: none;
     flex-shrink: 0;
+}
+
+.cards > a {
+    display: block;
+    width: 100%;
+    max-width: 400px;
+    box-sizing: border-box;
 }
 
 
