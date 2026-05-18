@@ -58,12 +58,10 @@ backdrop-filter: blur(3px);
 }
 
 .cards > a {
-    display: block;
     width: 100%;
-    max-width: 400px;
+    max-width: 450px;
     box-sizing: border-box;
     color: inherit;
-    display: inline-block;
     text-decoration: none;
     flex-shrink: 0;
 
