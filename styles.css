@@ -3,6 +3,7 @@ body {
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+    display: flex;
     flex-direction: column;
     align-items: center; 
     min-height: 100vh;
@@ -17,9 +18,13 @@ body {
 
 header {
     font-size: xx-large;
-    margin-top: 80px;      
-    margin-bottom: 40px;   
+    margin-top: auto;      
+    margin-bottom: 50px;   
     text-align: center;
+}
+
+main {
+    margin-bottom: auto; 
 }
 
 .cards {
@@ -44,12 +49,14 @@ header {
     border-top: 1px solid rgba(150, 150, 150, 0.3); 
     border-left: 1px solid rgba(140, 140, 140, 0.2);
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.09);
-    transition: 0.3s;
+    transition: 0.4s;
+    
 }
 
 .card>p {
     color: rgb(176, 176, 176);
 }
+
 .card>img {
     height: 32px;
     width: auto;
@@ -72,13 +79,61 @@ header {
 
 }
 
-footer {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    color: rgb(176, 176, 176);
-    font-size:x-small
+.socials{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
 
+.social {
+    justify-content: center;
+    align-items: center;
+    gap: 20px;          
+    display: flex;
+    height: 60px;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20px 30px;
+    border-radius: 20px;
+    background-color: rgba(128, 128, 128, 0.05);
+    backdrop-filter: blur(5px);
+    border-top: 1px solid rgba(150, 150, 150, 0.3); 
+    border-left: 1px solid rgba(140, 140, 140, 0.2);
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.09);
+    transition: 0.4s;
+}
+
+.socials > a {
+
+    width: 100%;
+    max-width: 450px;
+    box-sizing: border-box;
+    color: inherit;
+    text-decoration: none;
+    flex-shrink: 0;
+
+}
+
+.social>img {
+    height: 18px;
+    width: auto;
+}
+
+.social:hover {
+    transform: scale(1.05);
+    background-color: rgba(170, 170, 170, 0.367);
+    backdrop-filter: blur(3px);
+}
+
+footer {
+    margin-top: 40px;  
+    margin-bottom: auto;
+    width: 100%;
+    gap: 20px;
+    justify-content: center;
+}
+footer> hr{
+    color:rgba(150, 150, 150, 0.8);
 }
 
