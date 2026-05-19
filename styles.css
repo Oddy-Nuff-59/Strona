@@ -133,7 +133,14 @@ footer {
     gap: 20px;
     justify-content: center;
 }
+
 footer> hr{
-    color:rgba(150, 150, 150, 0.8);
+    color:rgba(150, 150, 150, 0.5);
+}
+
+footer> p{
+    color:rgba(150, 150, 150, 0.5);
+    font-size: small;
+    margin-top: 50px;
 }
 
